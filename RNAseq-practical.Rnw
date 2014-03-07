@@ -35,7 +35,14 @@ BiocStyle::latex()
 
 \tableofcontents
 
+\section{Introduction}
 
+This practical presents examples from the \Biocpkg{edgeR} \cite{edgeR_GLM} user's guide. To view the latest version of the user's guide in full, you can use the following commands
+
+<<>>=
+library(edgeR)
+edgeRUsersGuide()
+@
 
 \section{deepSAGE of wild-type vs Dclk1 transgenic mice}
 
