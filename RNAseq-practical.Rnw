@@ -18,7 +18,7 @@
 library("knitr")
 opts_chunk$set(tidy=FALSE,dev="png",fig.show="hide",
                fig.width=4,fig.height=4.5,
-               message=FALSE,eval=F)
+               message=FALSE,eval=FALSE)
 @ 
 
 <<style, eval=TRUE, echo=FALSE, results="asis">>=
@@ -151,7 +151,7 @@ detags <- rownames(topTags(et)$table)
 cpm(d)[detags, order(d$samples$group)]
 @ 
 
-The total number of differentiallly expressed genes at FDR< 0.05:
+The total number of differentiallly expressed genes at FDR $<$ 0.05:
 
 <<echo=TRUE>>=
 summary(de <- decideTestsDGE(et, p=0.05))
